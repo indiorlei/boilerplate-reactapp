@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cross-env SURGE_TOKEN=46697a9fa99b74fc7e6738e8a94955eb SURGE_LOGIN=indiorleioliveira@gmail.com surge ./build bdlplatereact.surge.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate": "yarn plop --plopfile generators/plopfile.js",
