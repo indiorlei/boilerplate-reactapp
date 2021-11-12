@@ -12,7 +12,7 @@
     "eject": "react-scripts eject",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "yarn && build-storybook -s public && cross-env SURGE_TOKEN=46697a9fa99b74fc7e6738e8a94955eb SURGE_LOGIN=indiorleioliveira@gmail.com surge ./storybook-static bdlplatestlguide.surge.sh"
   },
   "jest": {
     "testMatch": [
@@ -74,6 +74,7 @@
     "web-vitals": "^2.1.2"
   },
   "devDependencies": {
+    "cross-env": "7.0.2",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
